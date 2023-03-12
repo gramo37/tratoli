@@ -1,21 +1,24 @@
 import React from 'react'
 import "../css/shimmer.css"
 
-const Shimmer = () => {
+const Shimmer = ({ id }) => {
   return (
-    <div className='shimmer'>
+    <>
+      <h1 style={{textAlign: "center"}}>{id}</h1>
+      <div className='shimmer'>
         <div className='shimmer-left'>
-            <div className='shimmer-box'>
+          <div className='shimmer-box'>
 
-            </div>
-            <div className='shimmer-box'></div>
-            <div className='shimmer-box'></div>
+          </div>
+          <div className='shimmer-box'></div>
+          <div className='shimmer-box'></div>
         </div>
         <div className='shimmer-right'>
 
-        <div className='shimmer-animation'></div>
+          <div className='shimmer-animation'></div>
         </div>
-    </div>
+      </div>
+    </>
   )
 }
 

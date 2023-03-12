@@ -10,7 +10,7 @@ const PokemonDetails = () => {
   const { id } = useParams();
   const { data, loading, error } = useFetch(`${url}/api/v2/pokemon/${id}`)
 
-  if (loading) return <Shimmer />
+  if (loading) return <Shimmer id={id}/>
 
   if (error) return <div>Something went wrong</div>
 

@@ -29,7 +29,7 @@ const Dashboard = () => {
 
   return (
     <div className='dashboard-container'>
-      <h1>Find Your Pokemon</h1>
+      <h1>Choose a Pokemon</h1>
       <div className='pokemon-card-container'>
         {data?.results?.map((item) => {
           return <PokemonCard name={item?.name} />
