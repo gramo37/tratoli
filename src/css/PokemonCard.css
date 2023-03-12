@@ -1,0 +1,17 @@
+.card-item-container {
+    border: 2px solid black;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    width: fit-content;
+}
+
+.card-item-container a {
+    text-decoration: none;
+    color: black;
+}
+
+.card-item-container a h3 {
+    margin: 0px;
+    text-transform: capitalize;
+}

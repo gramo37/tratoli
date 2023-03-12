@@ -1,0 +1,48 @@
+.shimmer {
+  display: flex;
+  width: 100vw;
+}
+
+.shimmer-left {
+  width: 50%;
+}
+
+.shimmer-box {
+  position: relative;
+  height: 200px;
+  background-color: rgb(222, 222, 222);
+  margin: 7px;
+}
+
+.shimmer-right {
+  width: 50%;
+  height: 650px;
+  background-color: rgb(222, 222, 222);
+  margin: 7px;
+}
+
+.shimmer-animation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+  
+    background: linear-gradient(
+      100deg,
+      rgba(255, 255, 255, 0) 20%,
+      rgba(255, 255, 255, 0.5) 50%,
+      rgba(255, 255, 255, 0) 80%
+    );
+  
+    animation: shimmer 1s infinite linear;
+  }
+  
+  @keyframes shimmer {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(100%);
+    }
+  }
